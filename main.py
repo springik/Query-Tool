@@ -23,6 +23,8 @@ def run_query(inp, out):
     except Exception as error:
         print("Error when executing query")
         print(error)
+    finally:
+        conn.close()
 
 
 def main():
